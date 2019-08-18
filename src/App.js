@@ -29,7 +29,7 @@ export default function App() {
     <Container>
     {movies.length > 0 ? movies.filter(movie=> movie.vote_average >= rating)
     .map((movie, i)=> <CardTemplate movie={movie} key={i}/>)
-    :<Text>no movies :(</Text>}
+    :<Text>no movies available</Text>}
     </Container>
     </>
   )
